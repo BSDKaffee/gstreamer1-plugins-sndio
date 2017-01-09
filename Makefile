@@ -1,4 +1,5 @@
-INSTALL_LIB?=	install -m 0644
+BSD_INSTALL_LIB?=	install -s -m 444
+MKDIR?=	mkdir -p
 
 GST_CFLAGS!=	pkg-config --cflags gstreamer-plugins-base-1.0 gstreamer-audio-1.0
 GST_LIBS!=	pkg-config --libs gstreamer-plugins-base-1.0 gstreamer-audio-1.0
@@ -28,4 +29,5 @@ clean:
 	rm -f libgstsndio.so ${OBJS}
 
 install:
-	${INSTALL_LIB} libgstsndio.so ${DESTDIR}${GST_PLUGINDIR}
+	${MKDIR} ${DESTDIR}${GST_PLUGINDIR}
+	${BSD_INSTALL_LIB} libgstsndio.so ${DESTDIR}${GST_PLUGINDIR}
