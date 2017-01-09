@@ -19,6 +19,8 @@ OBJS=	gstsndio.o \
 	sndiosink.o \
 	sndiosrc.o
 
+all: libgstsndio.so
+
 libgstsndio.so: ${OBJS}
 	${CC} -shared -o libgstsndio.so ${OBJS} ${GST_LIBS} -lsndio
 
