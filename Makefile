@@ -28,4 +28,4 @@ clean:
 	rm -f libgstsndio.so ${OBJS}
 
 install:
-	${INSTALL_LIB} libgstsndio.so ${STAGEDIR}${GST_PLUGINDIR}
+	${INSTALL_LIB} libgstsndio.so ${DESTDIR}${GST_PLUGINDIR}
