@@ -1,0 +1,6 @@
+#define GST_LICENSE "ISC"
+#define GST_PACKAGE_NAME "GStreamer sndio plugin"
+#define GST_PACKAGE_ORIGIN "Unknown package origin"
+#define GST_PACKAGE_RELEASE_DATETIME "2024-11-07"
+#define PACKAGE "gst-plugins-sndio"
+#define VERSION "1.24.0"
